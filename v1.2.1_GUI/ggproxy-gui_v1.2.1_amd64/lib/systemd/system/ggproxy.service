@@ -1,0 +1,13 @@
+[Unit]
+Description=GGProxy GUI v1.2.1 - Lightweight high performance HTTP/HTTPS and SOCKS5 proxy with web dashboard
+After=network.target
+
+[Service]
+User=ggproxy
+Group=ggproxy
+ExecStart=/usr/local/bin/ggproxy
+Restart=on-failure
+StandardOutput=journal
+
+[Install]
+WantedBy=multi-user.target

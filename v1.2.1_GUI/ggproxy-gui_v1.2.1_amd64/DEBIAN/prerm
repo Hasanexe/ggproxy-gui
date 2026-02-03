@@ -1,0 +1,7 @@
+#!/bin/bash
+set -e
+
+# Stop service if running
+systemctl stop ggproxy || true
+
+exit 0

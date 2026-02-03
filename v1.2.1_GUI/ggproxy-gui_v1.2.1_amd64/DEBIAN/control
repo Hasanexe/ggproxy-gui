@@ -1,0 +1,6 @@
+Package: ggproxy-gui
+Version: 1.2.1
+Section: net
+Architecture: amd64
+Maintainer: Hasan BAGCI hasannbagci@gmail.com
+Description: GGProxy GUI - Lightweight high performance HTTP/HTTPS and SOCKS5 proxy with web dashboard

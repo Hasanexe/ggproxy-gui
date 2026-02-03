@@ -1,0 +1,25 @@
+# IDE and editor directories
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Kiro workspace
+.kiro/
+
+# Go build artifacts
+mikroproxy
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Go test cache
+.testcache/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Next Improvements
+improvements-*

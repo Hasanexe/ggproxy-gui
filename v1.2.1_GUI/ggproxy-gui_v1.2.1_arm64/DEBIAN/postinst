@@ -1,0 +1,20 @@
+#!/bin/bash
+set -e
+
+# Only create 'ggproxy' user if it doesn't already exist
+if ! id -u ggproxy >/dev/null 2>&1; then
+    useradd -r -s /bin/false ggproxy
+fi
+
+# Set ownership and permissions
+chown ggproxy:ggproxy /etc/ggproxy.conf
+chmod 644 /etc/ggproxy.conf
+
+# Reload and enable systemd service
+systemctl daemon-reload
+systemctl enable ggproxy
+
+# Start service automatically on install
+systemctl start ggproxy || true
+
+exit 0
